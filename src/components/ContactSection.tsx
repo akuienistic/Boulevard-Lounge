@@ -76,7 +76,7 @@ export default function ContactSection() {
     if (!validate()) {
       toast({
         title: "Please fix the errors below",
-        description: "Some fields need your attention before we can send your request.",
+        description: "Some fields need your attention. Make sure everything is properly filled out.",
         variant: "destructive",
       });
       return;
@@ -96,7 +96,7 @@ export default function ContactSection() {
   };
 
   const inputClass = (field: keyof FormData) =>
-    `w-full px-4 py-3 rounded-xl border bg-background font-body text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 transition ${
+    `w-full px-4 py-3 rounded-xl border bg-background font-body text-base text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 transition ${
       errors[field] ? "border-red-400 focus:ring-red-400/30" : "border-border focus:ring-lounge-gold/40"
     }`;
 

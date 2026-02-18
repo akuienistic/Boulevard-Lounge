@@ -95,6 +95,12 @@
     font-weight: 400;
   }
 
+  /* Prevent mobile browsers from auto-zooming inputs by ensuring a minimum readable font-size */
+  input, textarea, select {
+    @apply text-base;
+    -webkit-text-size-adjust: 100%;
+  }
+
   h1, h2, h3, h4, h5, h6 {
     font-family: 'Cormorant Garamond', Georgia, serif;
     font-weight: 600;
