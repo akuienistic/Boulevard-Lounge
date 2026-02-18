@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,600&family=Montserrat:wght@300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,600&family=Montserrat:wght@300;400;500;600;700&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -12,8 +12,8 @@
 @layer base {
   :root {
     /* Core palette */
-    --background: 40 30% 97%;          /* warm cream */
-    --foreground: 25 20% 18%;          /* deep walnut */
+    --background: 40 30% 97%; /* warm cream */
+    --foreground: 25 20% 18%; /* deep walnut */
 
     --card: 0 0% 100%;
     --card-foreground: 25 20% 18%;
@@ -91,18 +91,25 @@
 
   body {
     @apply bg-background text-foreground;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-weight: 400;
   }
 
   /* Prevent mobile browsers from auto-zooming inputs by ensuring a minimum readable font-size */
-  input, textarea, select {
+  input,
+  textarea,
+  select {
     @apply text-base;
     -webkit-text-size-adjust: 100%;
   }
 
-  h1, h2, h3, h4, h5, h6 {
-    font-family: 'Cormorant Garamond', Georgia, serif;
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Cormorant Garamond", Georgia, serif;
     font-weight: 600;
     letter-spacing: 0.01em;
   }
@@ -111,11 +118,11 @@
 /* Utility classes that map to design tokens */
 @layer utilities {
   .font-display {
-    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-family: "Cormorant Garamond", Georgia, serif;
   }
 
   .font-body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
   }
 
   .gradient-hero {
@@ -146,24 +153,36 @@
     box-shadow: var(--shadow-card-hover);
   }
 
-  .text-spa-sage { color: hsl(var(--spa-sage)); }
-  .text-lounge-gold { color: hsl(var(--lounge-gold)); }
-  .bg-spa-light { background-color: hsl(var(--spa-blue-light)); }
-  .bg-lounge-cream { background-color: hsl(var(--lounge-cream)); }
-  .bg-lounge-beige { background-color: hsl(var(--lounge-beige)); }
-  .border-lounge-gold { border-color: hsl(var(--lounge-gold)); }
+  .text-spa-sage {
+    color: hsl(var(--spa-sage));
+  }
+  .text-lounge-gold {
+    color: hsl(var(--lounge-gold));
+  }
+  .bg-spa-light {
+    background-color: hsl(var(--spa-blue-light));
+  }
+  .bg-lounge-cream {
+    background-color: hsl(var(--lounge-cream));
+  }
+  .bg-lounge-beige {
+    background-color: hsl(var(--lounge-beige));
+  }
+  .border-lounge-gold {
+    border-color: hsl(var(--lounge-gold));
+  }
 
   .section-padding {
     @apply py-20 px-6 md:px-12 lg:px-20;
   }
 
   .divider-ornament::before {
-    content: '✦';
+    content: "✦";
     color: hsl(var(--lounge-gold));
     margin-right: 0.75rem;
   }
   .divider-ornament::after {
-    content: '✦';
+    content: "✦";
     color: hsl(var(--lounge-gold));
     margin-left: 0.75rem;
   }

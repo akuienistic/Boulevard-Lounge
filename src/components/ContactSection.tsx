@@ -163,8 +163,8 @@ export default function ContactSection() {
               <span className="font-body text-xs text-muted-foreground tracking-widest uppercase">Follow us</span>
               <div className="flex items-center gap-3">
                 {[
-                  { Icon: Instagram, href: "#", label: "Instagram" },
                   { Icon: Facebook, href: "https://web.facebook.com/boulevardloungelimited", label: "Facebook" },
+                  { Icon: Instagram, href: "#", label: "Instagram" },
                   { Icon: Twitter, href: "#", label: "Twitter" },
                 ].map(({ Icon, href, label }) => (
                   <a
@@ -184,7 +184,7 @@ export default function ContactSection() {
 
           {/* Booking form */}
           <div className="bg-card rounded-3xl shadow-card border border-border p-8">
-            <h3 className="font-display text-3xl font-bold text-foreground mb-6">Make a Reservation</h3>
+            <h3 className="font-display text-3xl font-bold text-foreground mb-6 text-center">Make a Reservation</h3>
             <form className="space-y-4" onSubmit={handleSubmit} noValidate>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div className="space-y-1.5">
@@ -270,7 +270,12 @@ export default function ContactSection() {
                   <div className="absolute inset-y-0 left-3 flex items-center pointer-events-none text-muted-foreground">
                     <Tag size={16} />
                   </div>
-                  <select name="service" value={form.service} onChange={handleChange} className={`${inputClass("service")} pl-10`}>
+                  <select
+                    name="service"
+                    value={form.service}
+                    onChange={handleChange}
+                    className={`${inputClass("service")} pl-10`}
+                  >
                     <option value="">Select a service...</option>
                     <option>Spa Treatment</option>
                     <option>Pool & Bar</option>
@@ -300,7 +305,7 @@ export default function ContactSection() {
                     value={form.message}
                     onChange={handleChange}
                     rows={3}
-                    placeholder="Tell us what you need..."
+                    placeholder="Elaborate more on the service you're interested in..."
                     className={`${inputClass("message")} pl-10 resize-none`}
                   />
                 </div>
