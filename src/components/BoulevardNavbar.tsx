@@ -143,7 +143,7 @@ export default function BoulevardNavbar() {
         </button>
 
         <p className="font-display text-lounge-gold text-lg font-semibold mb-4 px-2 pb-3 border-b border-white/30">
-          Explore Tabs
+          Explore Services
         </p>
 
         <div className="space-y-3 bg-black/12 rounded-2xl p-3">

@@ -54,7 +54,7 @@ export default function HeroSection() {
         >
           <button
             onClick={() => scrollTo("spa")}
-            className="flex items-center gap-2 px-8 py-4 rounded-full font-body font-semibold text-lounge-brown gradient-cta hover:opacity-90 transition-all duration-300 shadow-hero text-base"
+            className="flex items-center gap-2 px-8 py-4 rounded-full font-body font-semibold text-primary-foreground gradient-cta hover:opacity-90 transition-all duration-300 shadow-hero text-base"
           >
             <Flower2 size={17} />
             Book a Massage
